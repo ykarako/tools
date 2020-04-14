@@ -2,7 +2,7 @@
 
 pickle_dir="$HOME/inaho_robo/output/aspara_detector/recognition"
 config_dir="$HOME/inaho_robo/config/aspara_detector"
-tmp_dir="/tmp/copy_pickle_log/$(date '+%Y-%m-%d')"
+tmp_dir="/tmp/copy_pickle_log/$(date '+%Y-%m-%d')/pickle"
 
 
 echo "pickleデータとzense設定ファイルのコピーを行います"

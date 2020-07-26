@@ -34,8 +34,8 @@ def read(cap: cv2.VideoCapture) -> np.ndarray:
 
 @click.command()
 @click.argument("cam_path")
-@click.option("--rec_directory", default=".")
-@click.option("--rec_interval", default=1)
+@click.option("--rec_directory", "-o", default=".")
+@click.option("--rec_interval", "-i", default=1)
 def main(cam_path, rec_directory, rec_interval):
     cap = cv2.VideoCapture(cam_path)
     timer = FreqTimer(interval=200)
